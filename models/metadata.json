@@ -1,0 +1,26 @@
+{
+    "model_path": "models\\wine_quality_model.pkl",
+    "model_type": "StackingClassifier",
+    "stacking_base_models": [
+        "lgb",
+        "xgb",
+        "rf",
+        "et"
+    ],
+    "meta_model": "CatBoostClassifier",
+    "features": [
+        "type",
+        "fixed acidity",
+        "volatile acidity",
+        "citric acid",
+        "residual sugar",
+        "chlorides",
+        "free sulfur dioxide",
+        "total sulfur dioxide",
+        "density",
+        "pH",
+        "sulphates",
+        "alcohol"
+    ],
+    "scikit-learn": "1.6.1"
+}
